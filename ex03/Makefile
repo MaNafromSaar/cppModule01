@@ -1,4 +1,4 @@
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -I. -std=c++11
 PATH_SRC = ./
 HEADERS = Weapon.hpp\

@@ -6,7 +6,7 @@
 /*   By: mnaumann <mnaumann@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 15:36:50 by mnaumann          #+#    #+#             */
-/*   Updated: 2025/02/13 15:51:49 by mnaumann         ###   ########.fr       */
+/*   Updated: 2025/02/13 16:17:29 by mnaumann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class HumanB
 	public:
 		HumanB(std::string name);
 		~HumanB();
-		void setWeapon(Weapon &weapon);
+		void setWeaponPTR(Weapon *weapon);
 		void attack();
 };
 
