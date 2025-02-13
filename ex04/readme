@@ -1,0 +1,20 @@
+
+When to Use References
+Use references when you know that the object being referred to 'will always exist'
+and will not change.
+References are appropriate when the object is guaranteed to be valid for the
+lifetime of the reference.
+
+When to Use Pointers
+Use pointers when you need to manage the 'lifetime of the object' dynamically.
+Pointers are appropriate when the 'object may not always exist' (i.e., it can
+be null) or when you need to reassign the pointer to point to different objects.
+
+Applying to HumanA and HumanB
+HumanA: Since HumanA will always be armed, it makes sense to use a reference for
+the Weapon. This ensures that the Weapon is always valid and cannot be null.
+HumanB: Since HumanB may not always have a Weapon, it makes sense to use a
+pointer for the Weapon. This allows the Weapon to be null and can be reassigned
+as needed.
+
+Had to adapt the Weapon class to allow for a Weapon to be null.
