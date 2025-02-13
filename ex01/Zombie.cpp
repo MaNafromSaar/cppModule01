@@ -6,7 +6,7 @@
 /*   By: mnaumann <mnaumann@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 10:57:35 by mnaumann          #+#    #+#             */
-/*   Updated: 2025/02/13 14:13:13 by mnaumann         ###   ########.fr       */
+/*   Updated: 2025/02/13 14:26:15 by mnaumann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ std::string Zombie::getName(void) {
     return name;
 }
 
-void Zombie::announce(std::string name) {
+void Zombie::announce(void) {
     std::cout << name << " BraiiiiiiinnnzzzZ..." << std::endl;
 }
 

@@ -6,7 +6,7 @@
 /*   By: mnaumann <mnaumann@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 10:57:39 by mnaumann          #+#    #+#             */
-/*   Updated: 2025/02/13 14:12:20 by mnaumann         ###   ########.fr       */
+/*   Updated: 2025/02/13 14:25:41 by mnaumann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class Zombie{
 	public:
 		void		setName(std::string name);
 		std::string	getName(void);
-		void		announce(std::string name);
+		void		announce(void);
 		~Zombie();
 };
 
