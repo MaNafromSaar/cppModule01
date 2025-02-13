@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnaumann <mnaumann@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/13 10:57:39 by mnaumann          #+#    #+#             */
-/*   Updated: 2025/02/13 15:47:52 by mnaumann         ###   ########.fr       */
+/*   Created: 2025/02/13 15:41:24 by mnaumann          #+#    #+#             */
+/*   Updated: 2025/02/13 15:51:52 by mnaumann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
+#include "HumanA.hpp"
+#include "HumanB.hpp"
+#include "Weapon.hpp"
 
-#include<iostream>
-#include<iomanip>
-
-class Zombie{
-
-	private:
-		std::string	name;
-
-	public:
-		void		setName(std::string name);
-		std::string	getName(void);
-		void		announce(void);
-		~Zombie();
-};
-
-Zombie* zombieHorde( int N, std::string name );
-
-#endif
+int main()
+{
+	{
+	Weapon club = Weapon("crude spiked club");
+	HumanA bob("Bob", club);
+	bob.attack();
+	club.setType("some other type of club");
+	bob.attack();
+	}
+	{
+	Weapon club = Weapon("crude spiked club");
+	HumanB jim("Jim");
+	jim.setWeapon(club);
+	jim.attack();
+	club.setType("some other type of club");
+	jim.attack();
+	}
+}
