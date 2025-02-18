@@ -1,0 +1,15 @@
+# C++, switch
+
+## Overview
+This exercise demonstrates the use of the `switch` statement in C++.
+
+## Key Concepts
+- **Switch Statement**: The `switch` statement is used to handle multiple conditions more efficiently than a series of `if-else if` statements. It improves readability and can make the code more concise.
+- **Function Pointers**: The `Karen` class uses an array of function pointers to call the appropriate complaint method based on the input level.
+- **Error Handling**: The `complain` method handles invalid input by printing an error message and simulating a wait before printing a follow-up message.
+
+## Problems and Constraints
+This use for a switch statement is not elegant at all, but other constraints in this exercise lead to this version. The `switch` in general is a good way to shorten if-else if situations and make the code more readable. I would have preferred to combine it with dynamic for loops here but bringing both together was astonishingly hard here. Partly also due to my added function overloading.
+
+**Author**: Matthias Naumann  
+**GitHub**: [MaNafromSaar](https://github.com/MaNafromSaar)

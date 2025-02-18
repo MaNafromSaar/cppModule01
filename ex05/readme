@@ -1,0 +1,17 @@
+# C++, try and catch, multiple input formats, function overload, wait
+
+## This Karen can take int and str input
+The general aim of this exercise was quite clear but I was not happy with Karen's inflexibility and wanted to explore another concept: `function overload`.
+
+## Overview
+In this exercise, I implemented a `Karen` class that can handle complaints in multiple formats. The `Karen` class can take both integer and string inputs to determine the level of the complaint. This demonstrates the use of function overloading in C++.
+
+## Key Concepts
+- **Function Overloading**: I defined two `complain` methods in the `Karen` class, one that takes an integer and another that takes a string. This allows the class to handle different types of input.
+- **Error Handling**: I used `try` and `catch` blocks to handle invalid input. If the input cannot be converted to an integer, the string version of the `complain` method is called.
+- **Static Constants**: The `levels` array is defined as a static constant in the `Karen` class to store the different complaint levels.
+- **Wait**: to implement a wait functionality to make Karen even more... adorable, I realized that it is a bit harder than in c. As you can see in the complain function, you have to address the thread and use the chrono library.
+
+
+**Author**: Matthias Naumann  
+**GitHub**: [MaNafromSaar](https://github.com/MaNafromSaar)
